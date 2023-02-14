@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR</title>
+    <script src="js/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene stats>
+        <a-sky color="lightblue"></a-sky>
+        <a-camera>
+            <a-cursor color="black"></a-cursor>
+        </a-camera>
+        <a-box position="0 4 -20" color="red">
+            <a-sound src="sounds/444231__carloscarty__panflute-solo-wet-03-em.wav" autoplay=""></a-sound>
+        </a-box>
+        <a-box position="3 6 0" animation = "property: rotation; to: 0 360 0; startEvents:mouseenter;  dur: 5000; easing: linear; loop: true" color="purple"></a-box>
+        <a-box position="-1 1.6 -5" animation="property: position; dir: alternate; to: -10 0 -10; dur: 2000; easing: linear; loop: true" color="lightblue"></a-box>
+        <a-box src="img/Alzano-1_t-540x310.jpeg" position="3 2 -4"></a-box>
+
+        <a-sphere animation = "property: color; to: #00FF00; dur: 3000; easing: linear;" position="0 10 0" color="orange"></a-sphere>
+        <a-sphere position="-3 4 -8" color="orange"></a-sphere>
+
+        <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 2000">
+            <a-sphere position="5 0 0" color="mediumseagreen"></a-sphere>
+        </a-entity> 
+
+        <a-cone position="-5 6 -10" color="yellow"></a-cone>
+        <a-ring position="-1 8 0" color="red"></a-ring>
+        <a-torus-knot position="4 5 7" color="blue"></a-torus-knot>
+        
+        <a-image src="img/istockphoto-488848400-612x612.jpeg"></a-image>
+        <a-plane rotation="-90 0 0" position="-3 -2 -8" color="orange" width="30" height="30"></a-plane>
+    </a-scene>
+</body>
+</html>
